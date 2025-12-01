@@ -3,7 +3,7 @@ import cv2
 import numpy as np 
 import matplotlib.pyplot as plt 
  # Load the image 
-image = cv2.imread('Ganeshji.webp') 
+image = cv2.imread('jj.png') 
 # Convert BGR image to RGB 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
 # Define the scale factor 

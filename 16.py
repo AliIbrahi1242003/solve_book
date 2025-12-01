@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt 
 import numpy as np
  # Read image from disk. 
-img = cv2.imread('Ganeshji.webp') 
+img = cv2.imread('pout.jpg') 
 # Convert BGR image to RGB 
 image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 width = image_rgb.shape[1] 

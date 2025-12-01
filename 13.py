@@ -2,7 +2,7 @@ import cv2
 import numpy as np 
 import matplotlib.pyplot as plt
 # Read an image 
-image = cv2.imread('Ganeshji.webp', cv2.IMREAD_GRAYSCALE) 
+image = cv2.imread('hist_highkey.jpg', cv2.IMREAD_GRAYSCALE) 
 # Apply gamma correction (e.g., gamma = 1.5) 
 gamma = 2 
 gamma2=4 

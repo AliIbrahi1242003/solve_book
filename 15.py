@@ -2,7 +2,7 @@
 import cv2 
 import matplotlib.pyplot as plt 
 # Read image from disk. 
-img = cv2.imread('Ganeshji.webp') 
+img = cv2.imread('jj.png') 
 # Convert BGR image to RGB 
 image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 # Image rotation parameter 
