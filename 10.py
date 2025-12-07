@@ -1,46 +1,36 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-
 # Creating a rectangle using a black image
 rectangle = np.zeros((300, 300), dtype="uint8")
 cv2.rectangle(rectangle, (25, 25), (275, 275), 255, -1)
-
 # Creating a circle using a black image
 circle = np.zeros((300, 300), dtype="uint8")
 cv2.circle(circle, (150, 150), 150, 255, -1)
-
 # Plotting
 plt.figure(figsize=(20, 20))
-
 plt.subplot(2, 3, 1)
 plt.title("Rectangle")
 plt.imshow(rectangle, cmap='gray')
 plt.axis('off')
-
 plt.subplot(2, 3, 2)
 plt.title("Circle")
 plt.imshow(circle, cmap='gray')
 plt.axis('off')
-
 plt.subplot(2, 3, 3)
 plt.title("AND")
 plt.imshow(cv2.bitwise_and(rectangle, circle), cmap='gray')
 plt.axis('off')
-
 plt.subplot(2, 3, 4)
 plt.title("OR")
 plt.imshow(cv2.bitwise_or(rectangle, circle), cmap='gray')
 plt.axis('off')
-
 plt.subplot(2, 3, 5)
 plt.title("XOR")
 plt.imshow(cv2.bitwise_xor(rectangle, circle), cmap='gray')
 plt.axis('off')
-
 plt.subplot(2, 3, 6)
 plt.title("NOT (Circle)")
 plt.imshow(cv2.bitwise_not(circle), cmap='gray')
 plt.axis('off')
-
 plt.show()
